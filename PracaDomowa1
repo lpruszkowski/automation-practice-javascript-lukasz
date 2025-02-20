@@ -1,0 +1,126 @@
+Ad 1
+czy została utworzona wystarczająca ilość testów dla aplikacji? Tak
+czy znajdują się w projekcie testy nadmiarowe? Tak
+'Should add 2 todos'
+'adds items'
+Oba testy dodają nowe zadanie. Wydaje mi się, że wystarczyłby jeden.
+
+
+Ad 2
+czy napisane testy umożliwiają wykrycie defektów występujących w różnych wersjach aplikacji, opisanych w pliku Bugs.md? Tak
+
+Ad 3
+
+ID 1.0
+Tytuł: Should add 2 todos
+Wersja: test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji.
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "buy some cheese"
+	2. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat: Został dodany nowy element o nazwie "buy some cheese"
+Warunki końcowe: Użytkownik widzi na ekrani dodaną pozycję.
+
+-------------------------------------------------------
+
+ID 1.1
+Tytuł: should allow me to add todo items
+Wersja: test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji.
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "buy some cheese"
+	2. Kliknięcie 'Enter'
+	3. Wpisanie w pole tekstowe wartości "feed the cat"
+	4. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat: Użytkownik widzi nowo dodane elementy na liście
+Warunki końcowe: 
+
+-------------------------------------------------------
+
+ID 1.2
+Tytuł: adds items
+Wersja: test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji.
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "todo A"
+	2. Kliknięcie 'Enter'
+	3. Wpisanie w pole tekstowe wartości "todo B"
+	4. Kliknięcie 'Enter'
+	5. Wpisanie w pole tekstowe wartości "todo C"
+	6. Kliknięcie 'Enter'
+	7. Wpisanie w pole tekstowe wartości "todo D"
+	8. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat: Zostały dodane elementu o nazwach "todo A", "todo B", "todo C", "todo D" 
+Warunki końcowe:
+
+-------------------------------------------------------
+
+ID 1.3
+Tytuł: should clear text input field when an item is added
+Wersja: test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "buy some cheese"
+	2. Kliknięcie 'Enter'	
+	
+Oczekiwany rezultat:
+
+	1. Został dodany nowy element o nazwie "buy some cheese"
+	2. Pole tekstowe dodawania nowych elementów jest puste
+	
+Warunki końcowe:
+
+-------------------------------------------------------
+
+ID 1.4
+Tytuł: should append new items to the bottom of the list
+Wersja: test
+Warunek wstępny: 
+
+	1. Użytkownik znajduje się w głownym oknie aplikacji
+	2. Na liście jest co najmniej 1 dodany element
+	
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "todos"
+	2. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat: Nowy element został dodany na dole listy
+Warunki końcowe:
+
+-------------------------------------------------------
+
+ID 1.5
+Tytuł: should show #main and #footer when items added
+Wersja: test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "buy some cheese"
+	2. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat:
+
+	1. Użytkownik widzi okno dodawania nowych elementów wraz z listą dodanych elementów
+	2. Uzytkownik widzi stopkę
+	
+Warunki końcowe:
+
+-------------------------------------------------------
+
+Ad 4
+Brak pomysłów.
+
+
+
+
+
+
+
