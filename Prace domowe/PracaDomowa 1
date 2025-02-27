@@ -116,8 +116,53 @@ Warunki końcowe:
 -------------------------------------------------------
 
 Ad 4
-Brak pomysłów.
 
+ID 1 
+Tytuł: attempt to add todo composed of special characters
+Wersja:test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji
+Kroki reprodukcji:
+
+	1. Wpisanie w pole teskstowe wartości "!@#$%^&*(){}[]_+"
+	2. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat: Użytkownik widzi komunikat walidacyjny "Tekst może zawierać wyłącznie litery, cyfry, spacje oraz znaki specjalne !@#$%&*\/?,."'=+-_"
+Warunki końcowe:
+
+---------------------------------------------------------
+
+ID 2 
+Tytuł: should allow me to display an empty tab "Completed"
+Wersja: test
+Warunek wstępny: 
+
+	1. Użytkownik znajduje się w głownym oknie aplikacji
+	2. Uzytkownik nie ma todo o statusie "Complete"
+	
+Kroki reprodukcji:
+
+	1. Kliknięcie w zaklądkę "Completed"
+	
+Oczekiwany rezultat: 
+
+	1. Użytkownik został przeniesiony do widoku "Completed"
+	2. Lista jest pusta
+	
+Warunki końcowe:
+
+---------------------------------------------------------
+
+ID 3
+Tytuł: try adding todo with one character
+Wersja: test
+Warunek wstępny: Użytkownik znajduje się w głownym oknie aplikacji
+Kroki reprodukcji:
+
+	1. Wpisanie w pole tekstowe wartości "a"
+	2. Kliknięcie 'Enter'
+	
+Oczekiwany rezultat: Użytkownik widzi komunikat walidacyjny "Minimalna ilość znaków to 3"
+Warunki końcowe:
 
 
 
