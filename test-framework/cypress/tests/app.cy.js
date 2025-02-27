@@ -42,6 +42,8 @@ describe('TodoMVC - React', function () {
 				// exampleObj.false-data.falseWithName.one
 			});
 
+			let TODO_ITEM_ONE = 'buy book';
+
 			cy.get('.new-todo').type(TODO_ITEM_ONE).type('{enter}');
 
 			cy.get('.todo-list li').should('have.length', 1);
@@ -59,6 +61,9 @@ describe('TodoMVC - React', function () {
 		// https://on.cypress.io/as
 
 		it('should allow me to add todo items', function () {
+			
+			let TODO_ITEM_ONE = 'something to do 1';
+			
 			// create 1st todo
 			cy.get('.new-todo').type(TODO_ITEM_ONE).type('{enter}');
 
@@ -67,6 +72,8 @@ describe('TodoMVC - React', function () {
 				.eq(0)
 				.find('label')
 				.should('contain', TODO_ITEM_ONE);
+
+			let TODO_ITEM_TWO = 'something to do 2';
 
 			// create 2nd todo
 			cy.get('.new-todo').type(TODO_ITEM_TWO).type('{enter}');
@@ -90,6 +97,9 @@ describe('TodoMVC - React', function () {
 		});
 
 		it('should clear text input field when an item is added', function () {
+			
+			let TODO_ITEM_ONE = 'something to do 3';
+			
 			cy.get('.new-todo').type(TODO_ITEM_ONE).type('{enter}');
 
 			cy.get('.new-todo').should('have.text', '');
@@ -116,6 +126,9 @@ describe('TodoMVC - React', function () {
 		});
 
 		it('should show #main and #footer when items added', function () {
+			
+			let TODO_ITEM_ONE = 'something to do 4';
+			
 			cy.createTodo(TODO_ITEM_ONE);
 			cy.get('.main').should('be.visible');
 			cy.get('.footer').should('be.visible');
@@ -193,6 +206,10 @@ describe('TodoMVC - React', function () {
 		// - cy.clear    https://on.cypress.io/api/clear
 
 		it('should allow me to mark items as complete', function () {
+			
+			let TODO_ITEM_ONE = 'something to do 5';
+			let TODO_ITEM_TWO = 'something to do 6';
+			
 			// we are aliasing the return value of
 			// our custom command 'createTodo'
 			//
@@ -212,6 +229,9 @@ describe('TodoMVC - React', function () {
 		});
 
 		it('should allow me to un-mark items as complete', function () {
+			
+			let TODO_ITEM_TWO = 'something to do 7';
+			
 			cy.createTodo('kjlkhggjhgk').as('firstTodo');
 			cy.createTodo(TODO_ITEM_TWO).as('secondTodo');
 
@@ -326,6 +346,10 @@ describe('TodoMVC - React', function () {
 
 	context('Counter', function () {
 		it('should display the current number of todo items', function () {
+			
+			let TODO_ITEM_ONE = 'something to do 8';
+			let TODO_ITEM_TWO = 'something to do 9';
+			
 			cy.createTodo(TODO_ITEM_ONE);
 			cy.get('.todo-count').contains('1 item left');
 			cy.createTodo(TODO_ITEM_TWO);
@@ -379,6 +403,9 @@ describe('TodoMVC - React', function () {
 					.should('contain', TODO_ITEM_TWO)
 					.and('not.have.class', 'completed');
 			}
+
+			let TODO_ITEM_ONE = 'something to do 10';
+			let TODO_ITEM_TWO = 'something to do 11';
 
 			cy.createTodo(TODO_ITEM_ONE).as('firstTodo');
 			cy.createTodo(TODO_ITEM_TWO).as('secondTodo');
