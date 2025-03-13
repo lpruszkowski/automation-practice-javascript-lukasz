@@ -16,9 +16,9 @@ class BookOfNames {
 
 let bookOfNames = new BookOfNames()
 
-console.log(bookOfNames.namesChanger("Łukasz"));
-console.log(bookOfNames.namesChanger("Tomek"));
-console.log(bookOfNames.namesChanger("Michał"));
+console.log(bookOfNames.namesChanger("Jonasz"));
+console.log(bookOfNames.namesChanger("Abdiasz"));
+console.log(bookOfNames.namesChanger("Ismael"));
 
 
 /*
@@ -42,7 +42,7 @@ class BookOfNames {
 
         let firstLetter = this.name.charAt(0)
         let rest = this.name.substr(1)
-        
+
         console.log(firstLetter.toUpperCase() + rest)
         console.log(firstLetter.toLowerCase() + rest)
 
@@ -50,7 +50,7 @@ class BookOfNames {
     }
 }
 
-let bookOfNames = new BookOfNames("Jonasz")
+let bookOfNames = new BookOfNames("Jeremiasz")
 
 bookOfNames.secondMethod()
 
