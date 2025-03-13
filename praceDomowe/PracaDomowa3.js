@@ -30,12 +30,29 @@ console.log(bookOfNames.namesChanger("Michał"));
 
 */
 
+class BookOfNames {
 
+    constructor(name) {
+        this.name = name
+    }
 
+    secondMethod() {
 
+        console.log(this.name.substr(0, 2))
 
+        let firstLetter = this.name.charAt(0)
+        let rest = this.name.substr(1)
+        
+        console.log(firstLetter.toUpperCase() + rest)
+        console.log(firstLetter.toLowerCase() + rest)
 
+        console.log(this.name + " Nazwisko i jakieś dodatkowe dwa słowa")
+    }
+}
 
+let bookOfNames = new BookOfNames("Jonasz")
+
+bookOfNames.secondMethod()
 
 
 /*
