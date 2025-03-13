@@ -64,7 +64,6 @@ b. Zapoznaj się z wybranymi operatorami: Operatory logiczne - https://developer
       Wykorzystując poznane operatory w poleceniu console.log(), wskaż fragment kodu który sprawdzi wartości liczbowe z Twoich zmiennych w następujący 
       sposób:
         Zwróć true, jeśli jedna z liczb to 50 lub jeśli ich suma to 50 w innym przypadku powinno być false
-
 */
 
 let a = 36;
@@ -75,14 +74,13 @@ console.log( a && b == 50 || a + b == 50);
 
 /*
 c. Mamy wskazane dwie tablice :
-let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
-let o = ["th","st","nd","rd"]
+    let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+    let o = ["th","st","nd","rd"]
 
-Napisz fragment kodu który wyloguje informacje w konsoli wykorzystując obie tablice w podany sposób:
-"1st choice is Blue ."
-"2nd choice is Green."
-"3rd choice is Red."
-
+    Napisz fragment kodu który wyloguje informacje w konsoli wykorzystując obie tablice w podany sposób:
+    "1st choice is Blue ."
+    "2nd choice is Green."
+    "3rd choice is Red."
 */
 
 console.log("1" + o[1] + " choice is " + color[0] + ".")
