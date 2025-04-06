@@ -1,0 +1,35 @@
+1. Wykorzystując poznane sposoby tworzenia metod oraz dobre praktyki związane z programowaniem i wzorcami projektowymi, przebuduj projekt tak by indywidualnie stworzone przypadki testowe poddane przekształceniu na skrypty testów automatycznych były zgodne z dobrymi wzorcami projektowania projektów automatyzacji testów.
+
+ 
+1.1 Przekształć swoje indywidualne przypadki testowe przygotowane w poprzednich zadaniach na testy automatyczne:
+
+a. Wykorzystaj model Page Object dla własnych przypadków, tworząc odpowiednie katalogi oraz pliki w projekcie.
+
+b. Wykorzystaj w testach dziedziczenie, korzystając z programowania obiektowego (Słówka extends, oraz wykorzystanie metod dziedziczonych z klas które rozszerzamy)
+
+c. Wykorzystaj w testach metodę generowania losowych ciągów znaków.
+
+d. Wykorzystaj metodę: cy.fixture by odwołać się i wykorzystać własne dane testowe zawarte w plikach fikstur przygotowanych w poprzednich zadaniach
+
+
+
+Ad 1
+pages -> toDosCompletePage -> toDosCompletePage.js
+pages -> toDosPage -> toDosPage.js
+
+tests -> toDosCompletedTest.js
+tests -> toDosTest.js
+
+
+
+
+2. Na podstawie doświadczeń oraz materiałów dodatkowych, skróć proszę ten selektor w taki sposób by był zgodny z dobrymi praktykami i przechodził przez jak najmniejszą ilość elementów aplikacji:
+
+a.longVideos:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3)
+
+Selektor jest pobrany do elementu ze strony głównej aplikacji testerzy.pl
+
+
+Ad 2
+Skrócony selector
+//a[@href='https://www.youtube.com/watch?v=Qt9LS1LgQlI&mute=0']//img[@src='//i.ytimg.com/vi_webp/Qt9LS1LgQlI/sddefault.jpg']
