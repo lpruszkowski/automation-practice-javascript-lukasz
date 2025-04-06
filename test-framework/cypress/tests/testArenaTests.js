@@ -11,7 +11,7 @@ describe("Login to app scenario", function() {
        
         it('Proper login', function() {
             let loginPage = new LoginPage()
-            let mainPage = new MainPage
+            let mainPage = new MainPage()
 
             loginPage.visitPage()
             loginPage.login('administrator@testarena.pl', 'sumXQQ72$L')

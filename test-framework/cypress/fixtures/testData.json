@@ -1,4 +1,7 @@
 {
     "specialCharacters": "!@#$%^&*(){}[]_+",
-    "oneChar": "a"
+    "oneChar": 
+        [
+            "a", "b", "c", "d"
+        ]
 }
